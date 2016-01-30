@@ -1,0 +1,17 @@
+<dashboard>
+  <section data-role="page" data-theme="b" id="jqm-home">
+    <div data-role="header">
+      <h1>{{dashboardMsg}}</h1>
+    </div>
+    <div>
+      <ul>
+        <li ng-repeat="contacts in dashboardData">
+          <div title="click me" class="names" ng-click="toggle()">{{contacts.firstName}}, {{contacts.lastName}}</div>
+          <div class="contents" ng-class="{on:contacts.state}">
+            <span>{{contacts.phoneNumber}}</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+</dashboard>

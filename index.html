@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <title>My Sample Android app</title>
+  <link rel="stylesheet" href="assets/css/common-ui.css" />
+</head>
+
+<body>
+  <header-bar></header-bar>
+  <div ng-view></div>
+  <footer-bar></footer-bar>
+  <!-- Library files -->
+  <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+  <script type="text/javascript" src="lib/jquery/jquery-2.0.0.min.js"></script>
+  <!-- Application files -->
+  <script type="text/javascript" src="config/appConfig.js"></script>
+  <script type="text/javascript" src="config/constants.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/service/API.js"></script>
+  <!-- Controllers-->
+  <script type="text/javascript" src="controller/common/headerBar.js"></script>
+  <script type="text/javascript" src="controller/dashboard/dashboardController.js"></script>
+  <script type="text/javascript" src="controller/contactInfo/contactInfoController.js"></script>
+  <script type="text/javascript" src="controller/common/footerBar.js"></script>
+</body>
+
+</html>
